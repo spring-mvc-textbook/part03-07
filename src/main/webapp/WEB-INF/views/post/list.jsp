@@ -25,7 +25,7 @@
             <tbody>
                 <c:forEach items="${posts}" var="post">
                     <tr>
-                        <td>${post.seq}</td>
+                        <td>${post.id}</td>
                         <td><a href="/posts/${post.id}/">${post.title}</a></td>
                         <td>${post.username}</td>
                         <td>${post.createdAt.substring(0, 16)}</td>
