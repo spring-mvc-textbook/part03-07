@@ -36,10 +36,10 @@ public class PostController {
     }
 
     // 게시글 목록 (화면, GET)
-    @RequestMapping(value = "/posts/", method = RequestMethod.GET)
+    @RequestMapping(value = "/posts", method = RequestMethod.GET)
     public String listGet(Model model) {
         List<PostDto> posts = postService.list();
         model.addAttribute("posts", posts);
-        return "posts/list";
+        return "post/list";
     }
 }
