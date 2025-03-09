@@ -33,7 +33,7 @@ public class PostDao {
 
     // 게시글 목록
     public List<PostDto> list() {
-        String query = "SELECT ID, TITLE, CONTENT, USERNAME, PASSWORD, CREATED_AT, UPDATED_AT FROM POSTS";
+        String query = "SELECT ID, TITLE, CONTENT, USERNAME, PASSWORD, CREATED_AT, UPDATED_AT FROM POSTS ORDER BY ID DESC";
         List<PostDto> posts = null;
 
         try {
