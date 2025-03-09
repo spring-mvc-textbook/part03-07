@@ -12,7 +12,7 @@
         <div class="mb-3">
             <a href="/posts/create/" class="btn btn-primary">게시글 등록</a>
         </div>
-        <table class="table table-striped table-hover table-bordered"></table>
+        <table class="table table-striped table-hover table-bordered">
             <thead>
                 <tr>
                     <th>번호</th>
