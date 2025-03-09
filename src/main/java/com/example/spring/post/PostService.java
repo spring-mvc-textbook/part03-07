@@ -12,8 +12,8 @@ public class PostService {
     PostDao postDao;
 
     // 게시글 등록
-    public boolean create(PostDto postDto) {
-        int result = postDao.create(postDto);
+    public boolean create(PostDto post) {
+        int result = postDao.create(post);
         return result > 0;
     }
 

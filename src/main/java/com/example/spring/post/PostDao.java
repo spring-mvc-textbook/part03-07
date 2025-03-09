@@ -18,12 +18,12 @@ public class PostDao {
     JdbcTemplate jdbcTemplate;
 
     // 게시글 등록
-    public int create(PostDto postDto) {
+    public int create(PostDto post) {
         String query = "INSERT INTO POSTS (TITLE, CONTENT, USERNAME, PASSWORD) VALUES (?, ?, ?, ?)";
         int result = -1;
 
         try {
-            result = jdbcTemplate.update(query, postDto.getTitle(), postDto.getContent(), postDto.getUsername(), postDto.getPassword());
+            result = jdbcTemplate.update(query, post.getTitle(), post.getContent(), post.getUsername(), post.getPassword());
         } catch (DataAccessException e) {
             logger.error("게시글 등록 오류 : {}", e.getMessage(), e);
         }
