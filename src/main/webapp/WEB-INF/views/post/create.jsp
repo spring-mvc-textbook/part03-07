@@ -53,7 +53,7 @@
                 <div class="card-footer">
                     <div>
                         <button type="submit" class="btn btn-primary">등록</button>
-                        <a href="/posts/" class="btn btn-secondary">취소</a>
+                        <a href="/posts" class="btn btn-secondary">취소</a>
                     </div>
                 </div>
                 <%--// card-footer --%>

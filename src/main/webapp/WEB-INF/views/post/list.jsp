@@ -10,7 +10,7 @@
     <div class="col-12">
         <%-- 게시글 목록 --%>
         <div class="mb-3">
-            <a href="/posts/create/" class="btn btn-primary">게시글 등록</a>
+            <a href="/posts/create" class="btn btn-primary">게시글 등록</a>
         </div>
         <table class="table table-striped table-hover table-bordered">
             <thead>
